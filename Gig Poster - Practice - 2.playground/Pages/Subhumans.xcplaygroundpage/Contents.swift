@@ -10,7 +10,7 @@ import PlaygroundSupport
  
  ![subhumans-no-grid](subhumans-no-grid.png "Subhumans")
  ![subhumans-with-grid](subhumans-with-grid.png "Subhumans")
-
+ 
  By precisely reproducing this image, you will demonstrate your understanding of:
  
  * sequence (order of statements in a program)
@@ -33,16 +33,35 @@ let brown = Color(hue: 38, saturation: 99, brightness: 38, alpha: 100)
 let lightRed = Color(hue: 10, saturation: 80, brightness: 80, alpha: 75)
 
 // Begin your solution here...
+
+// Background Color
 canvas.fillColor = yellow
 canvas.drawRectangle(at: Point(x: 0, y: 0), width: 400, height: 600)
 
+
+
+// Draw custom shapes - start with brown
+
+canvas.fillColor = brown
+
+var points : [Point] = []
+points.append(Point(x: 0, y: 50))
+points.append(Point(x: 10, y: 50))
+points.append(Point(x: 57.5, y: 150))
+points.append(Point(x: 0, y: 150))
+
+canvas.drawCustomShape(with: points)
+
+for n in 0...6{
+    
+}
 /*:
  ## Use Source Control
  
  As this is a practice task, there is no hard deadline. However, completing this practice task – an assessment for learning – prior to attempting an assessment of learning – is strongly recommended.
  
  Be sure to commit your work multiple times as you make progress on completing this task.
-
+ 
  ## Template code
  The code below is necessary to see results in the Assistant Editor at right. Please do not remove.
  */
