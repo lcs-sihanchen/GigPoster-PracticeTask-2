@@ -52,8 +52,29 @@ points.append(Point(x: 0, y: 150))
 
 canvas.drawCustomShape(with: points)
 
-for n in 0...6{
+// Write a function to simplify the steps
+
+func oneFiftyTimes100(point1: Point, point2: Point, point3: Point, point4: Point){
     
+    var pointArray : [Point] = []
+    pointArray.append(point1)
+    pointArray.append(point2)
+    pointArray.append(point3)
+    pointArray.append(point4)
+    canvas.drawCustomShape(with: pointArray)
+    
+}
+
+
+
+
+
+// Use hoop to draw red quadrilateral
+canvas.fillColor = lightRed
+oneFiftyTimes100(point1: Point(x: 0, y: 235), point2: Point(x: 60, y: 235), point3: Point(x: 15, y: 135), point4: Point(x: 0, y: 135))
+for n in 0...2 {
+    canvas.fillColor = lightRed
+    oneFiftyTimes100(point1: Point(x: 70+160*n, y: 235), point2: Point(x: 220+160*n, y: 235), point3: Point(x: 175+160*n, y: 135), point4: Point(x: 25+160*n, y: 135))
 }
 /*:
  ## Use Source Control
