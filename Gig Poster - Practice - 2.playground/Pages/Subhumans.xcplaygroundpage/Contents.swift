@@ -146,6 +146,43 @@ canvas.drawText(message: "los angeles, california", at: Point(x: 150, y: 397), s
 canvas.drawText(message: "1801 s. grand ave.", at: Point(x: 150, y: 412), size: 10)
 canvas.drawText(message: "at olympic auditorium", at: Point(x: 150, y: 427), size: 10)
 
+// Info #3
+canvas.drawText(message: "new regime & red scare", at: Point(x: 275, y: 397), size: 10)
+canvas.drawText(message: "multi death corporations", at: Point(x: 275, y: 412), size: 10)
+canvas.drawText(message: "with the tourists", at: Point(x: 275, y: 427), size: 10)
+
+/*:
+ ## Use Source Control
+ 
+ As this is a practice task, there is no hard deadline. However, completing this practice task – an assessment for learning – prior to attempting an assessment of learning – is strongly recommended.
+ 
+ Be sure to commit your work multiple times as you make progress on completing this task.
+ 
+ ## Template code
+ The code below is necessary to see results in the Assistant Editor at right. Please do not remove.
+ */
+
+
+
+
+
+
+
+
+
+/*:
+ ## Use Source Control
+ 
+ As this is a practice task, there is no hard deadline. However, completing this practice task – an assessment for learning – prior to attempting an assessment of learning – is strongly recommended.
+ 
+ Be sure to commit your work multiple times as you make progress on completing this task.
+ 
+ ## Template code
+ The code below is necessary to see results in the Assistant Editor at right. Please do not remove.
+ */
+
+
+
 /*:
  ## Use Source Control
  
