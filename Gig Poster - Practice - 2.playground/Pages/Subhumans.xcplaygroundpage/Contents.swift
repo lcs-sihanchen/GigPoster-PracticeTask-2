@@ -116,6 +116,30 @@ for n in 0...2 {
     canvas.fillColor = lightRed
     oneFiftyTimes100(point1: Point(x: 70+160*n, y: 235), point2: Point(x: 220+160*n, y: 235), point3: Point(x: 175+160*n, y: 135), point4: Point(x: 25+160*n, y: 135))
 }
+
+// Draw grid lines
+
+for x in stride(from: 0, to: 400, by: 50){
+    canvas.drawLine(from: Point(x: x, y: 0), to: Point(x: x, y: 600))
+}
+
+
+for p in stride(from: 0, to: 600, by: 50){
+    canvas.drawLine(from: Point(x: 0 , y: p), to: Point(x: 400, y: p))
+}
+
+
+
+// Add text
+
+// Subhumans
+canvas.drawText(message: "subhumans", at: Point(x: 10, y: 325), size: 48)
+
+// Info #1
+canvas.drawText(message: "no age limit", at: Point(x: 15, y: 397), size: 10)
+canvas.drawText(message: "advance $6.50, door $7.50", at: Point(x: 15, y: 412), size: 10)
+canvas.drawText(message: "friday, april 13 1984", at: Point(x: 15, y: 427), size: 10)
+
 /*:
  ## Use Source Control
  
