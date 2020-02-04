@@ -140,6 +140,12 @@ canvas.drawText(message: "no age limit", at: Point(x: 15, y: 397), size: 10)
 canvas.drawText(message: "advance $6.50, door $7.50", at: Point(x: 15, y: 412), size: 10)
 canvas.drawText(message: "friday, april 13 1984", at: Point(x: 15, y: 427), size: 10)
 
+
+// Info #2
+canvas.drawText(message: "los angeles, california", at: Point(x: 150, y: 397), size: 10)
+canvas.drawText(message: "1801 s. grand ave.", at: Point(x: 150, y: 412), size: 10)
+canvas.drawText(message: "at olympic auditorium", at: Point(x: 150, y: 427), size: 10)
+
 /*:
  ## Use Source Control
  
