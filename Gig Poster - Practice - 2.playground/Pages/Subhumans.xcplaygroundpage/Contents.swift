@@ -38,19 +38,11 @@ let lightRed = Color(hue: 10, saturation: 80, brightness: 80, alpha: 75)
 canvas.fillColor = yellow
 canvas.drawRectangle(at: Point(x: 0, y: 0), width: 400, height: 600)
 
-
+canvas.drawShapesWithBorders = false
 
 // Draw custom shapes - start with brown
 
-canvas.fillColor = brown
 
-var points : [Point] = []
-points.append(Point(x: 0, y: 50))
-points.append(Point(x: 10, y: 50))
-points.append(Point(x: 57.5, y: 150))
-points.append(Point(x: 0, y: 150))
-
-canvas.drawCustomShape(with: points)
 
 // Write a function to simplify the steps
 
@@ -65,11 +57,46 @@ func oneFiftyTimes100(point1: Point, point2: Point, point3: Point, point4: Point
     
 }
 
+// Use loop to draw the bottom row of quadrilaterals
+canvas.fillColor = brown
+
+// First shape
+var points : [Point] = []
+points.append(Point(x: 0, y: 50))
+points.append(Point(x: 10, y: 50))
+points.append(Point(x: 57.5, y: 150))
+points.append(Point(x: 0, y: 150))
+canvas.drawCustomShape(with: points)
+
+// Switch from colors
+for y in 0...2 {
+    
+    
+    if y % 2 == 0 {
+        canvas.fillColor = purple
+    } else {
+        canvas.fillColor = brown
+    }
+
+// Drwa the shapes (Type switch from Int to Double), add 160 each time to get the coordinates
+    
+    
+    oneFiftyTimes100(point1: Point(x: 67.5+160.0*Double(y), y: 150), point2: Point(x: 217.5+160.0*Double(y), y: 150), point3: Point(x: 170+160.0*Double(y), y: 50), point4: Point(x: 20+160.0*Double(y), y: 50))
+    
+    
+    
+    
+}
 
 
 
 
-// Use hoop to draw red quadrilateral
+
+
+
+
+// Use loop to draw red quadrilateral
+
 canvas.fillColor = lightRed
 oneFiftyTimes100(point1: Point(x: 0, y: 235), point2: Point(x: 60, y: 235), point3: Point(x: 15, y: 135), point4: Point(x: 0, y: 135))
 for n in 0...2 {
